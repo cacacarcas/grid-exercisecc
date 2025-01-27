@@ -1,0 +1,57 @@
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('wrinkle.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background image during scroll */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    
+    
+}
+
+
+
+/* Grid Container Styles */
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Image Grid Layout */
+.travels {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-template-rows: repeat(6, 1fr); /* 6 rows */
+    gap: 15px; /* Space between images */
+    padding: 20px;
+    max-width: 1000px;
+}
+
+/* Image Styles */
+.travels img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Makes images circular */
+    object-fit: cover; /* Ensures images fill the circle without distortion */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+/* Hover Effect */
+.travels img:hover {
+    filter: brightness(80) invert(100); /* Turns the image to white */
+    transform: scale(1.1); /* Zoom effect on hover */
+}
